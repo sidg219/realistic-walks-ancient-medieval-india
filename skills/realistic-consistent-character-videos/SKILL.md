@@ -1,28 +1,19 @@
 ---
-name: realistic-consistent-character-videos
-description: Produce a fast-paced photorealistic ~30-second video of one or two real people from their reference photos, end to end in the VideoExpress web app with a browser - detailed character descriptions and voice locks, Consistent Character anchors, multi-shot image-to-video clips with lip-synced dialogue in a chosen English accent, dead-air trimming and export. Use when the user attaches photos of real people and asks for a consistent-character video, a video "starring" themselves or a colleague, a realistic talking scene with their face, or a VideoExpress consistent character video.
+name: realistic-walks-ancient-medieval-india
+description: Produce faceless, narrated historical documentary shorts about ancient and medieval India using source-backed claims, period World Locks, labelled visual reconstructions and a consistent narrator workflow.
 ---
 
-# Realistic Consistent Character Videos in VideoExpress
+# Realistic Walks Through Ancient & Medieval India
 
-The full recipe is `../../PLAYBOOK.md` at the repository root (public URL: https://raw.githubusercontent.com/ai-playbooks/realistic-consistent-character-videos/main/PLAYBOOK.md). Follow it exactly. It is self-contained.
+Read the repository PLAYBOOK.md in full. This skill is for documentary episodes about history, society and culture in ancient or medieval India.
 
-## Non-negotiables
-1. **Browser only.** Work at https://app.videoexpress.ai/. Run no code, shell, tests or file processing. The only file action is uploading the user's reference photos (Media Library → My Media → Images → Upload file → + Add files → Upload files).
-2. **No preflight.** No capability audit, readiness check, model verification, cost estimate or approval gate.
-3. **One question.** Ask for 1–2 photos plus a name per character (1 or 2 characters; best a close, sharp, front-facing head-and-shoulders photo), a story, an English accent per character, and optionally length (default 30 s), format (9:16 default or 16:9) and pacing (Multi-shot default or Single-shot). Then produce without stopping.
-4. **Consent.** Adults only, real likenesses the user has the right to use. No sexual, humiliating, hateful, political-impersonation, fake-news or deceptive content of a real person.
-5. **Realistic only.** Create Video From Prompt → **Vertical 9:16** (default) → Image Type **Photorealistic (Cinematic)**, **Use Creative mode ALWAYS ON** (anchors, start images, retries), **Automatically enhance my image prompt OFF**, Lipsync HD and Narration OFF, **public gallery OFF** on every generation.
-6. **Identity.** Write a very detailed **Character Description** per person (90–140 words: age/build, face shape, cheeks, jaw, chin, eyes, brows, nose, lips, skin, ears/facial hair, hair, accessories, plus a garment-by-garment Wardrobe Lock) and paste it verbatim into every image prompt; a Short Tag goes in video prompts. **Use Consistent Character** ON (the user clicks **I Agree** on the one-time Disclaimer). Make one chest-up anchor per character from only their photo in **Reference Photo**, select the closest carousel image (✓) and click **+ Consistent Character**. Then **Reference Photo** = Character 1's anchor, **Reference Photo 2** = Character 2's anchor.
-7. **Voice Lock.** One voice line plus the normalized accent phrase per character, word for word identical in every video prompt. English only.
-8. **Multi-shot.** 30 s = 4 clips × 8 s, 2–3 shots per clip joined by "A hard cut transitions to…". Single-shot = 5 s clips, no cuts. Advanced Mode → **Automatically enhance my video prompt OFF** (it is ON by default). Every prompt starts with `C## —`.
-9. **5 in parallel.** Never more than 5 videos rendering; work in waves.
-10. **Dead-air trim** at each clip's head and tail only, never inside a clip, then **Auto Align Clips**. Export High / FullHD / mp4 and deliver the My Videos link.
+Non-negotiables:
+1. Research first: maintain a claim ledger with sources and confidence.
+2. Label each statement or scene DOCUMENTED, INTERPRETED or RECONSTRUCTED.
+3. Keep the narrator off camera and use one consistent Voice Lock.
+4. Use World Locks for period, region, materials, clothing, tools, light and anachronism exclusions.
+5. Never invent quotations, translations, inscriptions, maps or archival evidence.
+6. Add VISUAL RECONSTRUCTION labels where generated scenes recreate the past.
+7. Include captions, source credits, uncertainty notes and a final fact-check pass.
+8. Preserve the episode handoff structure in examples/README.md.
 
-## Only stop for
-A photo upload your browser can't do, the one-time Consistent Character Disclaimer (**I Agree**), a login page, a one-time Terms screen, or an out-of-credits screen. The user does it, says "done", and you continue where you stopped.
-
-## References
-- `references/videoexpress-ui-map.md`: every control, label, default and quirk
-- `../../docs/video-prompting.md`: how to write multi-shot video prompts
-- `../../examples/README.md` and `../../examples/realistic-rooftop-tickets.md`: a worked job with every prompt written out
