@@ -42,14 +42,6 @@ Create one World Lock per period/location and paste it verbatim into every recon
 
 Plan approximately 24–36 scenes for a 4–6 minute episode, normally 8–12 seconds per scene. Each scene has: S## | timecode | narration IDs | evidence label | visual source | camera | sound | on-screen text. A scene may contain 2–3 internal shots for VideoExpress; keep the scene’s visual idea coherent.
 
-Add a continuity table before writing prompts:
-
-| Scene | Story/evidence beat | Incoming state | Action in order | Outgoing state | Transition into next scene | Shot size/camera side |
-|---|---|---|---|---|---|---|
-| S01 | {{beat}} | {{first-frame state}} | {{visible actions}} | {{last-frame state}} | match on action / camera bridge / exit-entry / time-place jump | {{framing}} |
-
-The outgoing state of one scene must be the incoming state of the next: preserve screen direction, landmark positions, gaze, hands, props, light and ambient sound. Use match-on-action by default. Use a camera-move bridge for object or map reveals, exit-entry for movement through space, and a short dissolve only for a genuine time or place jump.
-
 Recommended rhythm: present-day establishing view; map/route; surviving object or architecture; reconstructed activity; close material detail; social context; uncertainty card; return to place. Keep faces secondary: backs, profiles, hands, groups and silhouettes support the faceless format.
 
 ## 6. Image prompts
@@ -62,7 +54,7 @@ Write a complete image prompt for every scene before writing any video prompt. E
 
 ## 7. VideoExpress multishot prompts
 
-After all image prompts, write the VideoExpress prompts in the same scene order. Each clip starts `S## —` and is designed for an image-to-multishot workflow. Use 2–3 shots per prompt, joined by `A hard cut transitions to…`; specify shot size, camera movement, action, continuity, atmosphere and the exact narration line used in that scene. The prompt should flow in this order: opening frame and shot, action beats, one camera move with its end framing, outgoing state, transition note, then audio. Keep narration short enough for the clip and split long scenes into sequential clips. Add `audio: female narrator speaking English with a clear Indian English accent, warm documentary delivery; natural location sound; no music` unless music is requested. These prompts are for the user to paste into VideoExpress manually.
+After all image prompts, write the VideoExpress prompts in the same scene order. Each clip starts `S## —` and is designed for an image-to-multishot workflow. Use 2–3 shots per prompt, joined by `A hard cut transitions to…`; specify shot size, camera movement, action, continuity, atmosphere and the exact narration line used in that scene. Keep narration short enough for the clip and split long scenes into sequential clips. Add `audio: female narrator speaking English with a clear Indian English accent, warm documentary delivery; natural location sound; no music` unless music is requested. These prompts are for the user to paste into VideoExpress manually.
 
 Never ask the model to show the narrator speaking. For reconstruction clips, include on-screen label: VISUAL RECONSTRUCTION where needed. If an image model invents readable writing, remove it or replace it with a verified graphic in the edit.
 

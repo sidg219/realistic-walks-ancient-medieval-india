@@ -42,12 +42,6 @@
 |---|---:|---|---|---|---|
 | S01 | 00:00–00:10 | N01 | DOCUMENTED | Present-day / reconstruction | {{label}} |
 
-## Continuity table
-
-| Scene | Story/evidence beat | Incoming state | Action in order | Outgoing state | Transition into next scene | Shot size/camera side |
-|---|---|---|---|---|---|---|
-| S01 | {{beat}} | {{first-frame state}} | {{visible actions}} | {{last-frame state}} | {{match on action / camera bridge / exit-entry / time-place jump}} | {{framing}} |
-
 # Scene-by-scene image prompts
 
 ## S01 — {{scene title}}
