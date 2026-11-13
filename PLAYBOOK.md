@@ -2,13 +2,13 @@
 
 ## 0. Mission
 
-Create a faceless, narrated documentary short about history, society or culture in ancient or medieval India. The finished episode should feel like a guided walk through a place and its past, while making the limits of the evidence visible.
+Create a 4–6 minute faceless, narrated documentary about history, society or culture in ancient or medieval India. The finished episode should feel like a guided walk through a place and its past, while making the limits of the evidence visible. The deliverable is a detailed Markdown packet for manual image generation and manual VideoExpress production.
 
 Use a browser-capable video tool for production. The workflow may use present-day footage, generated images, image-to-video clips, maps, object close-ups and narration. Generated scenes are reconstructions, never archival evidence.
 
 ## 1. Intake
 
-Collect: topic or title; region and place; date range; central question; intended audience; target length; narration language and accent; aspect ratio; source links/notes; and whether the user has location or object images. Defaults: 60–90 seconds, 16:9, English narration, neutral British or Indian English accent, and no on-camera host.
+Collect: topic or title; region and place; date range; central question; intended audience; target length; narration language and accent; aspect ratio; source links/notes; and whether the user has location or object images. Defaults: 4–6 minutes, 16:9, female English narration with a clear Indian English accent, and no on-camera host.
 
 Write a five-line production card:
 
@@ -40,7 +40,7 @@ Create one World Lock per period/location and paste it verbatim into every recon
 
 ## 5. Scene map
 
-Plan 8–12 scenes for a 60–90 second episode. Each scene has: S## | time | narration IDs | evidence label | visual source | camera | sound | on-screen text.
+Plan approximately 24–36 scenes for a 4–6 minute episode, normally 8–12 seconds per scene. Each scene has: S## | timecode | narration IDs | evidence label | visual source | camera | sound | on-screen text. A scene may contain 2–3 internal shots for VideoExpress; keep the scene’s visual idea coherent.
 
 Recommended rhythm: present-day establishing view; map/route; surviving object or architecture; reconstructed activity; close material detail; social context; uncertainty card; return to place. Keep faces secondary: backs, profiles, hands, groups and silhouettes support the faceless format.
 
@@ -50,9 +50,11 @@ For a reconstruction, begin: Photorealistic historical visual reconstruction, cl
 
 For present-day footage, identify it as present-day and do not colour-grade it to look historical. For maps and diagrams, use simple, legible labels and verify every place-name and boundary.
 
-## 7. Video prompts
+Write a complete image prompt for every scene before writing any video prompt. Each prompt must include the scene ID, evidence label, present-day/reconstruction status, World Lock, subject placement, camera, lens or shot size, lighting, period details, continuity anchors, exclusions and aspect ratio. Never write “same as above” in place of the full prompt.
 
-Each clip starts S## —. Use one paragraph in the present tense. Describe the camera move, action, atmosphere and the exact narrator line. Keep one visual idea per shot. Use hard cuts only when they clarify a change in place, scale or evidence layer. Add audio: narrator only, natural location sound, no music unless music is specifically requested.
+## 7. VideoExpress multishot prompts
+
+After all image prompts, write the VideoExpress prompts in the same scene order. Each clip starts `S## —` and is designed for an image-to-multishot workflow. Use 2–3 shots per prompt, joined by `A hard cut transitions to…`; specify shot size, camera movement, action, continuity, atmosphere and the exact narration line used in that scene. Keep narration short enough for the clip and split long scenes into sequential clips. Add `audio: female narrator speaking English with a clear Indian English accent, warm documentary delivery; natural location sound; no music` unless music is requested. These prompts are for the user to paste into VideoExpress manually.
 
 Never ask the model to show the narrator speaking. For reconstruction clips, include on-screen label: VISUAL RECONSTRUCTION where needed. If an image model invents readable writing, remove it or replace it with a verified graphic in the edit.
 
@@ -66,7 +68,7 @@ Use a restrained sound bed beneath narration only where it does not imply eviden
 
 Before export, verify: every claim has a source or label; dates and place names agree; costumes/tools/materials fit the World Lock; maps do not project modern borders without explanation; reconstructions are labelled; no invented quotation or archival implication remains; captions are readable; narration and visuals do not contradict; credits are complete.
 
-## 10. Episode handoff
+## 10. Markdown episode handoff
 
-Deliver: title, one-sentence description, narration, scene map, prompt pack, sources, uncertainty notes, credits and export settings. Save the reusable episode packet in the structure described in examples/README.md.
+Deliver exactly one complete Markdown document using `templates/episode-output.md`: title and production card; research brief; source and claim ledger; full narration; World Locks; scene map; all scene-by-scene image prompts; then all matching VideoExpress multishot prompts; uncertainty notes; credits; and a manual production checklist. The image-prompt section must come before the VideoExpress section. Save the reusable episode packet in the structure described in examples/README.md.
 

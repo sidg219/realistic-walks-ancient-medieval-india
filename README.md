@@ -1,6 +1,6 @@
 # Realistic Walks Through Ancient & Medieval India
 
-An adaptation of the Realistic Consistent Character Videos workflow for faceless, narrated historical documentaries. It turns a place, period, question and source pack into a short visual essay: present-day location footage, historically grounded reconstructions, maps and objects, with a consistent narrator and transparent uncertainty labels.
+An adaptation of the Realistic Consistent Character Videos workflow for 4–6 minute faceless, narrated historical documentaries. Each request produces a detailed Markdown episode packet: research notes, narration, scene-by-scene image prompts, then matching image-to-multishot video prompts for manual production in VideoExpress.
 
 The workflow is designed for stories about history, society and culture in ancient and medieval India: trade routes, cities, temples, courts, crafts, foodways, languages, migration, belief and everyday life.
 
@@ -16,9 +16,9 @@ The workflow is designed for stories about history, society and culture in ancie
 ## Quick start
 
 1. Open [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) in a browser-capable assistant.
-2. Provide an episode brief: place, date range, central question, audience, language/accent, target length and source links or notes.
-3. Follow [PLAYBOOK.md](PLAYBOOK.md) to build the research brief, narration, visual plan and VideoExpress production.
-4. Use [examples/](examples/) as a model for a complete episode packet.
+2. Request a documentary topic, place, period or question. The defaults are 4–6 minutes, 16:9 and a female narrator with a clear Indian English accent.
+3. Provide source links or notes when available.
+4. Receive one detailed `.md` packet. Generate the images and then paste the following multishot video prompts into VideoExpress manually.
 
 ## Episode principles
 
@@ -34,6 +34,7 @@ Historical claims should be traceable. Separate primary evidence, scholarly inte
 | [docs/research-and-ethics.md](docs/research-and-ethics.md) | Evidence, uncertainty and representation rules |
 | [docs/visual-language.md](docs/visual-language.md) | Period reconstruction and camera language |
 | [examples/README.md](examples/README.md) | Episode packet format |
+| [templates/episode-output.md](templates/episode-output.md) | Required Markdown output structure |
 
 ## License and attribution
 

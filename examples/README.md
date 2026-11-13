@@ -1,5 +1,7 @@
 # Example episode packets
 
+The standard output is one detailed Markdown document for a 4–6 minute episode. It must place every scene-by-scene image prompt before the corresponding VideoExpress image-to-multishot prompt.
+
 Each episode packet should contain:
 
 1. `brief.md` — question, region, date range, audience and format.
